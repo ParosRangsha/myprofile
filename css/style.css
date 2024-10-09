@@ -92,7 +92,7 @@ body{
     padding: 10px;
 }
 nav{
-    background-color: #444;
+    background-color: red;
     position: sticky !important;
     width: 100%;
     top: 0;
