@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align: middle;
+    width: 100%;
+}
+h1, h2, h3, h4, h5, h6, a, p{
+    color: white;
+}
+/* All Style Start From Here */
+body{
+    background-color: #333;
+}
+.message{
+    position: fixed;
+    bottom: 10px;
+    right: 0;
+    padding: 10px;
+    background-color: blue;
+    border-radius: 10px 0 0 10px;
+    z-index: 998;
+    cursor: pointer; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.message h6 i{
+    color:red;
+}
+.message .icon i{
+    font-size: 40px;
+    color: white;
+}
+.floatmessage{
+    width: 500px;
+    background-color: white;
+    padding: 50px;
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 997;
+    border-radius: 5px;
+    display: none;
+}
+.floatmessage .cross{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: blue;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+.floatmessage label{
+    width: 100%;
+    margin: 0 5px;
+}
+.floatmessage input{
+    width: 100%;
+}
+.floatmessage textarea{
+    width: 100%;
+}
+.floatmessage button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(50, 50, 50, 0.5);
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+.floatmessage textarea{
+    padding: 10px;
+}
+nav{
+    background-color: #444;
+    position: sticky !important;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+nav a{
+    color: white !important;
+}
+nav ul li{
+    padding: 0 20px;
+    transition: 1s;
+    border-radius: 10px;
+}
+nav ul li:hover{
+    background: linear-gradient(-90deg, rgba(150,150,150,0.5), rgba(50,50,50,0.3));
+}
+.banner{
+    padding: 100px 0;
+    background-color: #393939;
+}
+.banner .box{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.banner h1, h3, h5{
+    text-align: center;
+}
+.banner .title{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .title h1{
+    font-size: 75px;
+}
+.banner .thumb{
+    width: 250px;
+    position: relative;
+}
+.banner .thumb::after{
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    bottom: -20px;
+    left: 0;
+    background-color: white;
+    border-radius: 5px;
+}
+.banner .thumb::before{
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    bottom: -40px;
+    left: 0;
+    background-color: white;
+    border-radius: 5px;
+    transform: scaleX(0);
+    animation: myanimation infinite 6s;
+}
+.banner .thumb img{
+    border-radius: 30% 30% 5px 5px;
+}
+.expert{
+    padding: 60px;
+}
+.expert h2{
+    background: linear-gradient(-90deg, rgba(150,150,150,0.5), rgba(50,50,50,0.3));
+    padding: 10px;
+    border-radius: 10px;
+}
+.expert .box{
+    margin: 20px 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+.expert h5{
+    text-align: center;
+    padding-top: 10px;
+}
+.expert .thumb img{
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+}
+.expert .thumb{
+    position: relative;
+    padding-bottom: 20px;
+}
+.expert .thumb::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 10px;
+    background-color: white;
+    left: 0;
+    bottom: 0px;
+    border-radius: 5px;
+    animation: myanimation infinite 6s;
+    display: none;
+}
+.expert .box:hover .thumb::after{
+    display: block;
+}
+.expert .star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.expert .star i{
+    color: orange;
+}
+.expert .paragraph p{
+    padding: 20px 20px 0;
+    text-align: justify;
+}
+.about{
+    padding: 60px 0;
+}
+.about h2{
+    padding: 30px 0 0;
+    text-align: center;
+    font-size: 60px;
+}
+.about h4{
+    text-align: center;
+}
+.about .star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.about .star i{
+    color: orange;
+}
+.about p{
+    text-align: justify;
+}
+.contact{
+    padding: 60px 0;
+    background-color: rgba(200, 200, 200, 0.1);
+}
+.contact hr{
+    height: 2px;
+    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
+}
+.contact .address{
+    display: flex;
+    gap: 20px;
+}
+.contact address, em, i{
+    color: white;
+}
+.contact textarea{
+    width: 100%;  
+    padding: 20px; 
+}
+.contact .button{
+    display: flex;
+    justify-content: right;
+}
+.contact .button button{
+    padding: 10px;
+    background-color: green;
+    color: white;
+}
