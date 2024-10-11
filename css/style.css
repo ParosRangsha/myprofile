@@ -276,3 +276,9 @@ nav ul li:hover{
     padding: 10px;
     border-radius: 10px;
 }
+.education .thumb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+}
