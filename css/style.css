@@ -102,12 +102,17 @@ nav{
 nav a{
     color: white !important;
 }
-nav ul li{
-    padding: 0 20px;
-    transition: 1s;
-    border-radius: 10px;
+nav ul li a:hover{
+    background: linear-gradient(-90deg, rgba(150,150,150,0.5), rgba(50,50,50,0.3));
 }
-nav ul li:hover{
+.menu-bg ul li{
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-bg ul li a.active{
+    padding: 0 100px;
     background: linear-gradient(-90deg, rgba(150,150,150,0.5), rgba(50,50,50,0.3));
 }
 .banner{
