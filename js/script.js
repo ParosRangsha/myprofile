@@ -26,6 +26,10 @@ setInterval(()=>{
 let cross = document.getElementById("cross")
 let floatMessage = document.getElementById("floatmessage")
 let liveChat = document.getElementById("message")
+let userName = document.getElementById("userName")
+let userMail = document.getElementById("userMail")
+let sendBtn = document.getElementById("sendBtn")
+let floatText = document.getElementById("floatText")
 cross.addEventListener("click",()=>{
     if(floatMessage.style.display = "flex"){
         floatMessage.style.display = "none"
@@ -40,8 +44,34 @@ liveChat.addEventListener("click",()=>{
         floatMessage.style.display = "flex"
     }
 })
+sendBtn.addEventListener("click",()=>{
+    if(userName.value == ""){
+        alert("Please input user name!")
+        userName.style.backgroundColor = "red"
+    } else if(userMail.value == ""){
+        alert("Please input user email!")
+        userMail.style.backgroundColor = "red"
+    }else if(floatText.value == ""){
+        alert("Please enter your text first!")
+        floatText.style.backgroundColor = "red"
+    }else{
+        alert("We are successfuly get your messages! Thank you.")
+        floatMessage.style.display = "none"
+        userName.value = ""
+        userMail.value = ""
+        floatText.value = ""
 
-
+    }
+})
+userName.addEventListener("click",()=>{
+    userName.style.backgroundColor = "white"
+})
+userMail.addEventListener("click",()=>{
+    userMail.style.backgroundColor = "white"
+})
+floatText.addEventListener("click",()=>{
+    floatText.style.backgroundColor = "white"
+})
 
 
 
