@@ -102,15 +102,26 @@ nav{
 nav a{
     color: white !important;
 }
-nav ul li a:hover{
-    background: linear-gradient(-90deg, rgba(150,150,150,0.5), rgba(50,50,50,0.3));
-}
 .menu-bg ul li{
     padding: 0 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
+.menu-bg ul li::after{
+    position: absolute;
+    content: '';
+    height: 5px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-50%);
+}
+.menu-bg ul li:hover::after{
+    animation: myanimation infinite 6s;
+}
+
 .menu-bg ul li a.active{
     padding: 0 100px;
     background: linear-gradient(-90deg, rgba(150,150,150,0.5), rgba(50,50,50,0.3));
