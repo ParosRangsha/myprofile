@@ -8,4 +8,7 @@
     .message .icon i{
         font-size: 20px !important;
     }
+    .floatmessage{
+        width: 90% !important;
+    }
 }
