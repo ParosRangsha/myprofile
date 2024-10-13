@@ -276,6 +276,7 @@ nav a{
 .contact textarea{
     width: 100%;  
     padding: 20px; 
+    max-height: 200px;
 }
 .contact .button{
     display: flex;
