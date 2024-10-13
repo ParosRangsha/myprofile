@@ -290,14 +290,26 @@ nav a{
 .education{
     padding: 60px 0;
 }
+.education hr{
+    width: 100%;
+    height: 2px;
+    background-color: #ddd;
+}
 .education h2{
     background: linear-gradient(-90deg, rgba(150,150,150,0.5), rgba(50,50,50,0.3));
     padding: 10px;
     border-radius: 10px;
+}
+.education h4, h6{
+    text-align: center;
+}
+.education p{
+    text-align: justify;
 }
 .education .thumb{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 75px;
+    padding: 50px;
 }
