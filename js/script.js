@@ -46,13 +46,10 @@ liveChat.addEventListener("click",()=>{
 })
 sendBtn.addEventListener("click",()=>{
     if(userName.value == ""){
-        alert("Please input user name!")
         userName.style.backgroundColor = "red"
     } else if(userMail.value == ""){
-        alert("Please input user email!")
         userMail.style.backgroundColor = "red"
     }else if(floatText.value == ""){
-        alert("Please enter your text first!")
         floatText.style.backgroundColor = "red"
     }else{
         alert("We are successfuly get your messages! Thank you.")

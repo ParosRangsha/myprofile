@@ -79,11 +79,12 @@ body{
 }
 .floatmessage textarea{
     width: 100%;
+    max-height: 250px;
 }
 .floatmessage button{
     width: 100%;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: rgba(50, 50, 50, 0.5);
     color: white;
     font-weight: 700;
