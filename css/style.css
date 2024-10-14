@@ -313,3 +313,18 @@ nav a{
     font-size: 75px;
     padding: 50px;
 }
+.job{
+    padding: 60px 0;
+}
+.job .thumb{
+    background-color: white;
+}
+.job h3{
+    margin-top: 20px;
+}
+.job h4{
+    text-align: center;
+}
+.job p{
+    text-align: justify;
+}
