@@ -236,6 +236,7 @@ nav a{
 }
 .about{
     padding: 60px 0;
+    background-color: #393939;
 }
 .about h2{
     padding: 30px 0 0;
@@ -315,6 +316,7 @@ nav a{
 }
 .job{
     padding: 60px 0;
+    background-color: #393939;
 }
 .job h2{
     background: linear-gradient(-90deg, rgba(150,150,150,0.5), rgba(50,50,50,0.3));
