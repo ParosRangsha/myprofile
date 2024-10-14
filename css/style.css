@@ -123,9 +123,9 @@ nav a{
 .menu-bg ul li:hover::after{
     animation: myanimation infinite 6s;
 }
-
 .menu-bg ul li a.active{
-    padding: 0 100px;
+    border-radius: 5px;
+    padding: 15 100px;
     background: linear-gradient(-90deg, rgba(150,150,150,0.5), rgba(50,50,50,0.3));
 }
 .banner{
@@ -329,6 +329,7 @@ nav a{
 }
 .job .title{
     padding: 20px 0;
+    border: 1px dashed rgba(100, 100, 100, 0.5);
 }
 .job h3{
     margin-top: 20px;
@@ -337,5 +338,7 @@ nav a{
     text-align: center;
 }
 .job p{
+    padding: 0 10px;
     text-align: justify;
+    border: 1px dashed rgba(100, 100, 100, 0.5);
 }
