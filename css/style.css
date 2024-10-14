@@ -325,6 +325,9 @@ nav a{
 .job .thumb{
     background-color: white;
 }
+.job .title{
+    padding: 20px 0;
+}
 .job h3{
     margin-top: 20px;
 }
