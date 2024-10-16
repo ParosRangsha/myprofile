@@ -72,6 +72,23 @@ floatText.addEventListener("click",()=>{
 
 
 
+let flow = document.querySelector(".flow")
+let countflow = 0;
+setInterval(()=>{
+    countflow   ++
+    if(countflow == 9){
+        flow.style.display = "none"
+    }
+}, 1000)
+let viewCount = document.querySelector('#countFlowNumber')
+let viewNumber = 1
+setInterval(()=>{
+    if(viewNumber < 10){
+        viewNumber++
+    }
+    viewCount.innerHTML = viewNumber * 10 + "%"  
+},800)
+
 
 
 
