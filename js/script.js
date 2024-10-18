@@ -18,9 +18,11 @@ function typeJs(){
         }
     }
 }
-setInterval(()=>{
-    typeJs();
-}, 400)
+setTimeout(()=>{
+    setInterval(()=>{
+        typeJs();
+    }, 400)
+}, 9000)
 
 
 let cross = document.getElementById("cross")
